@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VetClinicBKP.View.SelectedTovar"
+             Shell.NavBarIsVisible="False">
+
+    <ScrollView>
+        <StackLayout Style="{StaticResource MainStack}">
+            <Frame Style="{StaticResource BlyFrame}">
+                <Label Text="{Binding Name}" x:Name="TovarTB" HorizontalTextAlignment="Center" Style="{StaticResource BoldText}"/>
+            </Frame>
+
+            <Frame Style="{StaticResource MainFrame}">
+                <StackLayout>
+                    <Label Text="Описание" Style="{StaticResource BoldText}" />
+                    <Label Text="{Binding Description}" x:Name="DescriptionTB"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Style="{StaticResource MainFrame}">
+                <Image Source="{Binding Image}" />
+            </Frame>
+
+            <Frame Style="{StaticResource MainFrame}">
+                <StackLayout>
+                    <Label Text="Цена" Style="{StaticResource BoldText}"/>
+                    <Label Text="{Binding Price}" />
+                </StackLayout>
+            </Frame>
+
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button x:Name="Back" Text="Назад" Clicked="Back_Clicked" BackgroundColor="#f5b031" Margin="10"
+    FontSize="16" TextColor="Black" HorizontalOptions="Start"
+    HeightRequest="50" WidthRequest="120"/>
+
+                <Button x:Name="ShareBtn" Text="Поделиться" Clicked="ShareBtn_Clicked" 
+    BackgroundColor="#f5b031" Margin="10" FontSize="16" TextColor="Black" 
+    HorizontalOptions="Start" HeightRequest="50" WidthRequest="180"/>
+            </HorizontalStackLayout>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

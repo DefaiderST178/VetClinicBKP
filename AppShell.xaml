@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="VetClinicBKP.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:VetClinicBKP"
+    xmlns:local2="clr-namespace:VetClinicBKP.View"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <Tab Title="Главная" Icon="clinic.svg" >
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
+        </Tab>
+        <Tab Title="Врачи" Icon="doctor.svg" >
+            <ShellContent ContentTemplate="{DataTemplate local2:AllSpecialists}" Route="AllSpecialists"/>
+        </Tab>
+        <Tab Title="Препараты" Icon="med.svg" >
+            <ShellContent ContentTemplate="{DataTemplate local2:AllMedications}" Route="AllMedications"/>
+        </Tab>
+        <Tab Title="Товары" Icon="ball.svg" >
+            <ShellContent ContentTemplate="{DataTemplate local2:AllTovars}" Route="AllTovars"/>
+        </Tab>
+    </TabBar>
+
+</Shell>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VetClinicBKP.View.AllTovars">
+
+    <ScrollView>
+        <StackLayout Style="{StaticResource MainStack}">
+            <Frame Style="{StaticResource BlyFrame}">
+                <Label Text="Все препараты" HorizontalTextAlignment="Center" Style="{StaticResource BoldText}"/>
+            </Frame>
+
+            <ListView ItemsSource="{Binding Tovars}" x:Name="tovarList" ItemSelected="tovarList_ItemSelected" HasUnevenRows="True" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+
+                                <Frame Style="{StaticResource MainFrame}" CornerRadius="10" Padding="10" Margin="7,5,10,5">
+                                    <Grid Padding="10" ColumnSpacing="10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Image Grid.Column="0" Source="{Binding Image}" HeightRequest="75" WidthRequest="75" Aspect="AspectFill" />
+
+                                        <Label Grid.Column="1" Text="{Binding Name}" FontSize="16" VerticalOptions="Center" />
+                                    </Grid>
+                                </Frame>
+
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

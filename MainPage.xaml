@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VetClinicBKP.MainPage">
+
+    <ScrollView>
+        <StackLayout Style="{StaticResource MainStack}">
+            <Frame Style="{StaticResource BlyFrame}">
+                <Label Text="Свой доктор" HorizontalTextAlignment="Center" Style="{StaticResource BoldText}"/>
+            </Frame>
+
+            <Frame Style="{StaticResource MainFrame}">
+                <StackLayout>
+                    <Label Text="Добро пожаловать!"/>
+                    <Label Text="Мы рады помочь вашим пушистым друзьям оставаться здоровыми и счастливыми."/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Style="{StaticResource MainFrame}">
+                <Label Text="Наш список препаратов и товаров поможет вам найти все необходимое для заботы о своем любимце."/>
+            </Frame>
+
+            <Frame Style="{StaticResource MainFrame}">
+                <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="4*,1*">
+                    <Label Text="Обратная связь" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"/>
+
+                    <Label Text="dobrokotiki@gmail.com" FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
+
+                    <Image Aspect="Fill" Source="logo.png" WidthRequest="75" HeightRequest="75" Grid.RowSpan="4" Grid.Column="1"/>
+
+                    <Label Grid.Row="2" Grid.Column="0"/>
+                    <Label Text="Версия 1.2.8 " FontAttributes="Bold" Grid.Row="3" Grid.Column="0"/>
+                </Grid>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
