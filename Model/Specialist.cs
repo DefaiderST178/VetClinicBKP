@@ -8,5 +8,6 @@
         public string TypeSpecialist { get; set; }
         public string Service { get; set; }
         public string Price { get; set; }
+        public List<string> WorkingHours { get; set; }
     }
 }

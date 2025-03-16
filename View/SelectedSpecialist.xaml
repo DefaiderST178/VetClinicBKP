@@ -26,6 +26,40 @@
 
             <Frame Style="{StaticResource MainFrame}">
                 <StackLayout>
+                    <Label Text="Время приема" Style="{StaticResource BoldText}" />
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Пн. "/>
+                        <Label Text="{Binding WorkingHours[0]}"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Вт. "/>
+                        <Label Text="{Binding WorkingHours[1]}"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Ср. "/>
+                        <Label Text="{Binding WorkingHours[2]}"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Чт. "/>
+                        <Label Text="{Binding WorkingHours[3]}"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Пт. "/>
+                        <Label Text="{Binding WorkingHours[4]}"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Сб. "/>
+                        <Label Text="{Binding WorkingHours[5]}"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Вс. "/>
+                        <Label Text="{Binding WorkingHours[6]}"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <Frame Style="{StaticResource MainFrame}">
+                <StackLayout>
                     <Label Text="Услуги" Style="{StaticResource BoldText}"/>
                     <Label Text="{Binding Service}" />
                 </StackLayout>

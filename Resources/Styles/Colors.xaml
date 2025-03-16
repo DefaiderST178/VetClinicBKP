@@ -17,7 +17,7 @@
     <SolidColorBrush x:Key="Panel1Brush" Color="{StaticResource Panel1}"/>
     <SolidColorBrush x:Key="Panel2Brush" Color="{StaticResource Panel2}"/>
     <!--Белый фрейм-->
-    <Color x:Key="WhiteFrame">#eeffee</Color>
+    <Color x:Key="WhiteFrame">#eeeeee</Color>
     <Color x:Key="GrayFrame">#5A94FA</Color>
     <SolidColorBrush x:Key="WhiteFrameBrush" Color="{StaticResource WhiteFrame}"/>
     <SolidColorBrush x:Key="GrayFrameBrush" Color="{StaticResource GrayFrame}"/>
