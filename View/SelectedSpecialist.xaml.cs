@@ -10,7 +10,19 @@ public partial class SelectedSpecialist : ContentPage
 
     private async void ShareBtn_Clicked(object sender, EventArgs e)
     {
-
+        string textToShare = $"Специалист: {SpecTB.Text}\nОписание: {DescriptionTB.Text}";
+        try
+        {
+            await Share.RequestAsync(new ShareTextRequest
+            {
+                Text = textToShare,
+                Title = "Поделиться текстом"
+            });
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Ошибка", $"Не удалось поделиться текстом: {ex.Message}", "OK");
+        }
     }
 
     private async void Back_Clicked(object sender, EventArgs e)

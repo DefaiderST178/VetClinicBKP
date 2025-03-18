@@ -11,7 +11,7 @@
 
             <Frame Style="{StaticResource MainFrame}">
                 <StackLayout>
-                    <Label Text="Добро пожаловать!" Style="{StaticResource BoldText}" TextColor="Black"/>
+                    <Label Text="Добро пожаловать!" Style="{StaticResource BoldText}"/>
                     <Label Text="Мы рады помочь вашим пушистым друзьям оставаться здоровыми и счастливыми."/>
                 </StackLayout>
             </Frame>
@@ -24,7 +24,7 @@
                 <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="4*,1*">
                     <Label Text="Обратная связь" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"/>
 
-                    <Label Text="dobrokotiki@gmail.com" FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
+                    <Label Text="info@your-doctor.ru" FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
 
                     <Image Aspect="Fill" Source="logo.png" WidthRequest="75" HeightRequest="75" Grid.RowSpan="4" Grid.Column="1"/>
 

@@ -5,30 +5,30 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <!--Текст-->
-    <Color x:Key="Text1">#000444</Color>
+    <Color x:Key="Text1">#384f7a</Color>
     <Color x:Key="Text2">#ffffff</Color>
     <Color x:Key="Text3">#697F9E</Color>
     <SolidColorBrush x:Key="Text1Brush" Color="{StaticResource Text1}"/>
     <SolidColorBrush x:Key="Text2Brush" Color="{StaticResource Text2}"/>
     <SolidColorBrush x:Key="Text3Brush" Color="{StaticResource Text3}"/>
     <!--Стекпанель-->
-    <Color x:Key="Panel1">#0f4c80</Color>
-    <Color x:Key="Panel2">#2d57a3</Color> 
+    <Color x:Key="Panel1">#2d57a3</Color>
+    <Color x:Key="Panel2">#0f4c80</Color> 
     <SolidColorBrush x:Key="Panel1Brush" Color="{StaticResource Panel1}"/>
     <SolidColorBrush x:Key="Panel2Brush" Color="{StaticResource Panel2}"/>
     <!--Белый фрейм-->
     <Color x:Key="WhiteFrame">#eeeeee</Color>
-    <Color x:Key="GrayFrame">#5A94FA</Color>
+    <Color x:Key="GrayFrame">#dddddd</Color>
     <SolidColorBrush x:Key="WhiteFrameBrush" Color="{StaticResource WhiteFrame}"/>
     <SolidColorBrush x:Key="GrayFrameBrush" Color="{StaticResource GrayFrame}"/>
     <!--Голубой фрейм-->
     <Color x:Key="BlyFrame">#a9d6e5</Color>
-    <Color x:Key="DarkBlyFrame">#0165FA</Color>
+    <Color x:Key="DarkBlyFrame">#7e9bd1</Color>
     <SolidColorBrush x:Key="BlyFrameBrush" Color="{StaticResource BlyFrame}"/>
     <SolidColorBrush x:Key="DarkBlyFrameBrush" Color="{StaticResource DarkBlyFrame}"/>
 
     <Color x:Key="Primary">#512BD4</Color>
-    <Color x:Key="Secondary">#0097e6</Color>
+    <Color x:Key="Secondary">#DFD8F7</Color>
     <Color x:Key="Tertiary">#2B0B98</Color>
     <Color x:Key="White">White</Color>
     <Color x:Key="Black">Black</Color>

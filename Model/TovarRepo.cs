@@ -92,6 +92,15 @@
                 Description = "Эффективная щетка для удаления подшерстка у собак и кошек.",
                 TovarType = "Уход за шерстью",
                 Price = "2000 руб."
+            },
+            // Сбор товаров для БД
+            new Tovar()
+            {
+                ID_Tovar = 11,
+                Name = "",
+                Description = "",
+                TovarType = "",
+                Price = ""
             }
         };
         public List<Tovar> GetAllTovars()

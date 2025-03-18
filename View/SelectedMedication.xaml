@@ -26,7 +26,35 @@
 
             <Frame Style="{StaticResource MainFrame}">
                 <StackLayout>
-                    <Image Source="{Binding Image}"/>
+                    <Image Source="{Binding Image}" MaximumHeightRequest="400" MaximumWidthRequest="400"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Style="{StaticResource MainFrame}">
+                <StackLayout>
+                    <Label Text="Cостав" Style="{StaticResource BoldText}"/>
+                    <Label Text="{Binding Composition}" />
+                </StackLayout>
+            </Frame>
+
+            <Frame Style="{StaticResource MainFrame}">
+                <StackLayout>
+                    <Label Text="Применение" Style="{StaticResource BoldText}"/>
+                    <Label Text="{Binding Use}" />
+                </StackLayout>
+            </Frame>
+
+            <Frame Style="{StaticResource MainFrame}">
+                <StackLayout>
+                    <Label Text="Дозировка" Style="{StaticResource BoldText}"/>
+                    <Label Text="{Binding Dosage}" />
+                </StackLayout>
+            </Frame>
+
+            <Frame Style="{StaticResource MainFrame}">
+                <StackLayout>
+                    <Label Text="Преимущества" Style="{StaticResource BoldText}"/>
+                    <Label Text="{Binding Advantages}" />
                 </StackLayout>
             </Frame>
 

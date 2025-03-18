@@ -7,7 +7,7 @@
     <ScrollView>
         <StackLayout Style="{StaticResource MainStack}">
             <Frame Style="{StaticResource BlyFrame}">
-                <Label Text="{Binding TypeSpecialist}" x:Name="TovarTB" HorizontalTextAlignment="Center" Style="{StaticResource BoldText}"/>
+                <Label Text="{Binding TypeSpecialist}" x:Name="SpecTB" HorizontalTextAlignment="Center" Style="{StaticResource BoldText}"/>
             </Frame>
 
             <Frame Style="{StaticResource MainFrame}">
