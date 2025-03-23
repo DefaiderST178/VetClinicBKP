@@ -26,6 +26,16 @@
 
             <Frame Style="{StaticResource MainFrame}">
                 <StackLayout>
+                    <Label Text="Стоимость" Style="{StaticResource BoldText}"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{Binding Price}" />
+                        <Label Text=" рублей"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <Frame Style="{StaticResource MainFrame}">
+                <StackLayout>
                     <Image Source="{Binding Image}" MaximumHeightRequest="400" MaximumWidthRequest="400"/>
                 </StackLayout>
             </Frame>
@@ -59,12 +69,12 @@
             </Frame>
 
             <HorizontalStackLayout HorizontalOptions="Center">
-                <Button x:Name="Back" Text="Назад" Clicked="Back_Clicked" BackgroundColor="#f5b031" Margin="10"
-                FontSize="16" TextColor="Black" HorizontalOptions="Start"
+                <Button x:Name="Back" Text="Назад" Clicked="Back_Clicked"  Margin="10"
+                FontSize="16" HorizontalOptions="Start"
                 HeightRequest="50" WidthRequest="120"/>
 
                 <Button x:Name="ShareBtn" Text="Поделиться" Clicked="ShareBtn_Clicked" 
-                BackgroundColor="#f5b031" Margin="10" FontSize="16" TextColor="Black" 
+                Margin="10" FontSize="16"
                 HorizontalOptions="Start" HeightRequest="50" WidthRequest="180"/>
             </HorizontalStackLayout>
 

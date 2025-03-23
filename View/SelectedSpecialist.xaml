@@ -67,18 +67,18 @@
 
             <Frame Style="{StaticResource MainFrame}">
                 <StackLayout>
-                    <Label Text="Цена" Style="{StaticResource BoldText}"/>
+                    <Label Text="Стоимость приема / оказание услуг" Style="{StaticResource BoldText}"/>
                     <Label Text="{Binding Price}" />
                 </StackLayout>
             </Frame>
 
             <HorizontalStackLayout HorizontalOptions="Center">
-                <Button x:Name="Back" Text="Назад" Clicked="Back_Clicked" BackgroundColor="#f5b031" Margin="10"
-                    FontSize="16" TextColor="Black" HorizontalOptions="Start"
+                <Button x:Name="Back" Text="Назад" Clicked="Back_Clicked" Margin="10"
+                    FontSize="16"  HorizontalOptions="Start"
                     HeightRequest="50" WidthRequest="120"/>
 
                 <Button x:Name="ShareBtn" Text="Поделиться" Clicked="ShareBtn_Clicked" 
-                    BackgroundColor="#f5b031" Margin="10" FontSize="16" TextColor="Black" 
+                     Margin="10" FontSize="16" 
                     HorizontalOptions="Start" HeightRequest="50" WidthRequest="180"/>
             </HorizontalStackLayout>
 

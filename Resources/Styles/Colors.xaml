@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <!--Текст-->
-    <Color x:Key="Text1">#384f7a</Color>
+    <Color x:Key="Text1">#0f2f6a</Color>
     <Color x:Key="Text2">#ffffff</Color>
     <Color x:Key="Text3">#697F9E</Color>
     <SolidColorBrush x:Key="Text1Brush" Color="{StaticResource Text1}"/>
@@ -22,14 +22,14 @@
     <SolidColorBrush x:Key="WhiteFrameBrush" Color="{StaticResource WhiteFrame}"/>
     <SolidColorBrush x:Key="GrayFrameBrush" Color="{StaticResource GrayFrame}"/>
     <!--Голубой фрейм-->
-    <Color x:Key="BlyFrame">#a9d6e5</Color>
+    <Color x:Key="BlyFrame">#7e9bd1</Color>
     <Color x:Key="DarkBlyFrame">#7e9bd1</Color>
     <SolidColorBrush x:Key="BlyFrameBrush" Color="{StaticResource BlyFrame}"/>
     <SolidColorBrush x:Key="DarkBlyFrameBrush" Color="{StaticResource DarkBlyFrame}"/>
 
-    <Color x:Key="Primary">#512BD4</Color>
+    <Color x:Key="Primary">#0f2f6a</Color>
     <Color x:Key="Secondary">#DFD8F7</Color>
-    <Color x:Key="Tertiary">#2B0B98</Color>
+    <Color x:Key="Tertiary">#0f2f6a</Color>
     <Color x:Key="White">White</Color>
     <Color x:Key="Black">Black</Color>
     <Color x:Key="Gray100">#E1E1E1</Color>

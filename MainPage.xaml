@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="VetClinicBKP.MainPage">
+             x:Class="VetClinicBKP.MainPage"
+              xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui">
+    <ContentPage.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="#7e9bd1" />
+    </ContentPage.Behaviors>
 
     <ScrollView>
         <StackLayout Style="{StaticResource MainStack}">
@@ -12,12 +16,15 @@
             <Frame Style="{StaticResource MainFrame}">
                 <StackLayout>
                     <Label Text="Добро пожаловать!" Style="{StaticResource BoldText}"/>
-                    <Label Text="Мы рады помочь вашим пушистым друзьям оставаться здоровыми и счастливыми."/>
+                    <Label Text="Мы рады помочь вашим пушистым друзьям оставаться здоровыми и счастливыми. Наш список препаратов и товаров поможет вам найти все необходимое для заботы о своем любимце."/>
                 </StackLayout>
             </Frame>
 
             <Frame Style="{StaticResource MainFrame}">
-                <Label Text="Наш список препаратов и товаров поможет вам найти все необходимое для заботы о своем любимце."/>
+                <StackLayout>
+                    <Label Text="Адрес" Style="{StaticResource BoldText}"/>
+                    <Label Text="Проспект Ермака, 81, Новочеркасск, Ростовская область" x:Name="AddressLabel"/>
+                </StackLayout>
             </Frame>
 
             <Frame Style="{StaticResource MainFrame}">
@@ -32,6 +39,9 @@
                     <Label Text="Версия 1.1.1 " FontAttributes="Bold" Grid.Row="3" Grid.Column="0"/>
                 </Grid>
             </Frame>
+
+            <Button x:Name="OpenMapBtn" Text="Открыть карту" Clicked="OpenMapBtn_Clicked" HorizontalOptions="Start" 
+                    Margin="15,10,0,0" FontSize="16" HeightRequest="50" WidthRequest="180" />
 
         </StackLayout>
     </ScrollView>

@@ -10,7 +10,8 @@
                 Name = "Корм для собак Royal Canin",
                 Description = "Высококачественный корм для взрослых собак всех пород.",
                 TovarType = "Корма",
-                Price = "1500 руб."
+                Price = "1500 руб.",
+                Image = "image.jpg"
             },
 
             new Tovar() 
@@ -19,7 +20,8 @@
                 Name = "Шампунь для кошек Beaphar",
                 Description = "Гипоаллергенный шампунь для ухода за шерстью кошек.",
                 TovarType = "Уход за животными",
-                Price = "500 руб."
+                Price = "500 руб.",
+                Image = "image.jpg"
             },
         
             new Tovar() 
@@ -28,7 +30,8 @@
                 Name = "Игрушка для собак Kong Classic",
                 Description = "Прочная игрушка для жевания, подходит для средних и крупных пород.",
                 TovarType = "Игрушки",
-                Price = "700 руб."
+                Price = "700 руб.",
+                Image = "image.jpg"
             },
         
             new Tovar()
@@ -37,7 +40,8 @@
                 Name = "Ошейник от блох и клещей Bayer Kiltix",
                 Description = "Защита от паразитов до 7 месяцев.",
                 TovarType = "Средства защиты",
-                Price = "900 руб."
+                Price = "900 руб.",
+                Image = "image.jpg"
             },
 
             new Tovar() 
@@ -46,7 +50,8 @@
                 Name = "Наполнитель для кошачьего туалета Cat's Best",
                 Description = "Комкующийся наполнитель из натуральных материалов.",
                 TovarType = "Туалеты и наполнители",
-                Price = "600 руб."
+                Price = "600 руб.",
+                Image = "image.jpg"
             },
     
             new Tovar() 
@@ -55,7 +60,8 @@
                 Name = "Витамины для щенков 8 in 1 Excel",
                 Description = "Комплекс витаминов и минералов для растущих щенков.",
                 TovarType = "Витамины и добавки",
-                Price = "1200 руб."
+                Price = "1200 руб.",
+                Image = "image.jpg"
             },
 
             new Tovar() 
@@ -64,7 +70,8 @@
                 Name = "Переноска для кошек Trixie",
                 Description = "Удобная переноска для транспортировки кошек.",
                 TovarType = "Транспортировка",
-                Price = "1700 руб."
+                Price = "1700 руб.",
+                Image = "image.jpg"
             },
     
             new Tovar() 
@@ -73,7 +80,8 @@
                 Name = "Лакомство для собак Pedigree DentaStix",
                 Description = "Лакомство для чистки зубов и свежего дыхания.",
                 TovarType = "Лакомства",
-                Price = "400 руб."
+                Price = "400 руб.",
+                Image = "image.jpg"
             },
 
             new Tovar() 
@@ -82,7 +90,8 @@
                 Name = "Лежанка для собак Ferplast",
                 Description = "Мягкая лежанка с водонепроницаемым покрытием.",
                 TovarType = "Домики и лежанки",
-                Price = "2300 руб."
+                Price = "2300 руб.",
+                Image = "image.jpg"
             },
 
             new Tovar() 
@@ -91,17 +100,18 @@
                 Name = "Щетка для вычесывания шерсти FURminator",
                 Description = "Эффективная щетка для удаления подшерстка у собак и кошек.",
                 TovarType = "Уход за шерстью",
-                Price = "2000 руб."
+                Price = "2000 руб.",
+                Image = "image.jpg"
             },
-            // Сбор товаров для БД
-            new Tovar()
-            {
-                ID_Tovar = 11,
-                Name = "",
-                Description = "",
-                TovarType = "",
-                Price = ""
-            }
+            //// Сбор товаров для БД
+            //new Tovar()
+            //{
+            //    ID_Tovar = 11,
+            //    Name = "",
+            //    Description = "",
+            //    TovarType = "",
+            //    Price = ""
+            //}
         };
         public List<Tovar> GetAllTovars()
         {

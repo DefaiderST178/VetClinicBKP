@@ -6,7 +6,7 @@
     <ScrollView>
         <StackLayout Style="{StaticResource MainStack}">
             <Frame Style="{StaticResource BlyFrame}">
-                <Label Text="Все препараты" HorizontalTextAlignment="Center" Style="{StaticResource BoldText}"/>
+                <Label Text="Все товары" HorizontalTextAlignment="Center" Style="{StaticResource BoldText}"/>
             </Frame>
 
             <ListView ItemsSource="{Binding Tovars}" x:Name="tovarList" ItemSelected="tovarList_ItemSelected" HasUnevenRows="True" >
