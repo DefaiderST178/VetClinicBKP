@@ -10,18 +10,18 @@
                 Name = "Корм для собак Royal Canin",
                 Description = "Высококачественный корм для взрослых собак всех пород.",
                 TovarType = "Корма",
-                Price = "1500 руб.",
-                Image = "image.jpg"
+                Price = "3200 руб.",
+                Image = "korm.jpg"
             },
 
             new Tovar() 
             {
                 ID_Tovar = 2,
-                Name = "Шампунь для кошек Beaphar",
-                Description = "Гипоаллергенный шампунь для ухода за шерстью кошек.",
-                TovarType = "Уход за животными",
+                Name = "Зубная щетка «Toothbrush»",
+                Description = "Зубная щетка, состоящая из двух типов щетинок, которые могут использоваться для собак и кошек любых размеров и пород. Щетинки разработаны специально в соответствии с формой зубов собак и кошек. ",
+                TovarType = "Зубная щетка",
                 Price = "500 руб.",
-                Image = "image.jpg"
+                Image = "toothbrush.jpg"
             },
         
             new Tovar() 
@@ -31,7 +31,7 @@
                 Description = "Прочная игрушка для жевания, подходит для средних и крупных пород.",
                 TovarType = "Игрушки",
                 Price = "700 руб.",
-                Image = "image.jpg"
+                Image = "kong.jpg"
             },
         
             new Tovar()
@@ -40,8 +40,8 @@
                 Name = "Ошейник от блох и клещей Bayer Kiltix",
                 Description = "Защита от паразитов до 7 месяцев.",
                 TovarType = "Средства защиты",
-                Price = "900 руб.",
-                Image = "image.jpg"
+                Price = "1900 руб.",
+                Image = "kiltixoheinik.jpg"
             },
 
             new Tovar() 
@@ -50,8 +50,8 @@
                 Name = "Наполнитель для кошачьего туалета Cat's Best",
                 Description = "Комкующийся наполнитель из натуральных материалов.",
                 TovarType = "Туалеты и наполнители",
-                Price = "600 руб.",
-                Image = "image.jpg"
+                Price = "3000 руб.",
+                Image = "bestnapoln.jpg"
             },
     
             new Tovar() 
@@ -61,7 +61,7 @@
                 Description = "Комплекс витаминов и минералов для растущих щенков.",
                 TovarType = "Витамины и добавки",
                 Price = "1200 руб.",
-                Image = "image.jpg"
+                Image = "excel.jpg"
             },
 
             new Tovar() 
@@ -71,7 +71,7 @@
                 Description = "Удобная переноска для транспортировки кошек.",
                 TovarType = "Транспортировка",
                 Price = "1700 руб.",
-                Image = "image.jpg"
+                Image = "trixie.jpg"
             },
     
             new Tovar() 
@@ -81,7 +81,7 @@
                 Description = "Лакомство для чистки зубов и свежего дыхания.",
                 TovarType = "Лакомства",
                 Price = "400 руб.",
-                Image = "image.jpg"
+                Image = "dentastix.jpg"
             },
 
             new Tovar() 
@@ -91,7 +91,7 @@
                 Description = "Мягкая лежанка с водонепроницаемым покрытием.",
                 TovarType = "Домики и лежанки",
                 Price = "2300 руб.",
-                Image = "image.jpg"
+                Image = "ferplast.jpg"
             },
 
             new Tovar() 
@@ -101,16 +101,27 @@
                 Description = "Эффективная щетка для удаления подшерстка у собак и кошек.",
                 TovarType = "Уход за шерстью",
                 Price = "2000 руб.",
-                Image = "image.jpg"
+                Image = "minator.jpg"
             },
-            //// Сбор товаров для БД
+            // Сбор товаров для БД 
+            new Tovar()
+            {
+                ID_Tovar = 11,
+                Name = "Миска для кошек и собак",
+                Description = "Миска кормушка имеет полностью разборную конструкцию, что делает ее использование очень удобным, при необходимости помыть целиком или только нужную часть.\r\nВсе элементы миски изготовлены из прочного пластика безопасного для животных. Чаши с полезным объемом 250 мл легко крепятся на подставке.",
+                TovarType = "Миска",
+                Price = "500",
+                Image = "doublemiska.jpg"
+            },
+
             //new Tovar()
             //{
-            //    ID_Tovar = 11,
+            //    ID_Tovar = 12,
             //    Name = "",
             //    Description = "",
             //    TovarType = "",
-            //    Price = ""
+            //    Price = "",
+            //    Image = "image.jpg"
             //}
         };
         public List<Tovar> GetAllTovars()
