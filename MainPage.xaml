@@ -41,7 +41,7 @@
             </Frame>
 
             <Button x:Name="OpenMapBtn" Text="Открыть карту" Clicked="OpenMapBtn_Clicked" HorizontalOptions="Start" 
-                    Margin="15,10,0,0" FontSize="16" HeightRequest="50" WidthRequest="180" />
+                    Margin="15,10,0,0" FontSize="16" HeightRequest="50" WidthRequest="180" BackgroundColor="#7e9bd1"/>
 
         </StackLayout>
     </ScrollView>

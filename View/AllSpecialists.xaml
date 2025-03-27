@@ -15,8 +15,22 @@
                         <ViewCell>
                             <ViewCell.View>
 
-                                <Frame Style="{StaticResource MainFrame}" CornerRadius="10" Padding="10" Margin="7,5,10,5">
-                                    <Label Grid.Column="1" Text="{Binding TypeSpecialist}" FontSize="16" VerticalOptions="Center" />
+                                <Frame CornerRadius="10" Padding="10" HasShadow="True" Margin="7,5,10,5">
+
+                                    <Grid Padding="10" ColumnSpacing="10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Image Grid.Column="0" Source="{Binding Image}" HeightRequest="100" WidthRequest="100" Aspect="AspectFit" />
+
+                                        <StackLayout Orientation="Vertical" Grid.Column="1" HorizontalOptions="Start" Margin="10,20,0,0">
+                                            <Label Text="{Binding Name}" HorizontalOptions="Start" />
+                                            <Label Text="{Binding TypeSpecialist}" HorizontalOptions="Start"/>
+                                        </StackLayout>
+
+                                    </Grid>
                                 </Frame>
 
                             </ViewCell.View>

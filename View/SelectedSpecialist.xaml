@@ -11,6 +11,10 @@
             </Frame>
 
             <Frame Style="{StaticResource MainFrame}">
+                <Image Source="{Binding Image}" HorizontalOptions="Center" Margin="10"/>
+            </Frame>
+
+            <Frame Style="{StaticResource MainFrame}">
                 <StackLayout>
                     <Label Text="Специалист" Style="{StaticResource BoldText}" />
                     <Label Text="{Binding Name}"/>
@@ -67,7 +71,7 @@
 
             <Frame Style="{StaticResource MainFrame}">
                 <StackLayout>
-                    <Label Text="Стоимость приема / оказание услуг" Style="{StaticResource BoldText}"/>
+                    <Label Text="Стоимость приема" Style="{StaticResource BoldText}"/>
                     <Label Text="{Binding Price}" />
                 </StackLayout>
             </Frame>
@@ -75,11 +79,11 @@
             <HorizontalStackLayout HorizontalOptions="Center">
                 <Button x:Name="Back" Text="Назад" Clicked="Back_Clicked" Margin="10"
                     FontSize="16"  HorizontalOptions="Start"
-                    HeightRequest="50" WidthRequest="120"/>
+                    HeightRequest="50" WidthRequest="120" BackgroundColor="#7e9bd1"/>
 
                 <Button x:Name="ShareBtn" Text="Поделиться" Clicked="ShareBtn_Clicked" 
                      Margin="10" FontSize="16" 
-                    HorizontalOptions="Start" HeightRequest="50" WidthRequest="180"/>
+                    HorizontalOptions="Start" HeightRequest="50" WidthRequest="180" BackgroundColor="#7e9bd1"/>
             </HorizontalStackLayout>
 
         </StackLayout>

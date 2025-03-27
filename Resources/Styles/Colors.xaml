@@ -12,13 +12,13 @@
     <SolidColorBrush x:Key="Text2Brush" Color="{StaticResource Text2}"/>
     <SolidColorBrush x:Key="Text3Brush" Color="{StaticResource Text3}"/>
     <!--Стекпанель-->
-    <Color x:Key="Panel1">#2d57a3</Color>
-    <Color x:Key="Panel2">#0f4c80</Color> 
-    <SolidColorBrush x:Key="Panel1Brush" Color="{StaticResource Panel1}"/>
-    <SolidColorBrush x:Key="Panel2Brush" Color="{StaticResource Panel2}"/>
+    <Color x:Key="BackLight">#2d57a3</Color>
+    <Color x:Key="BackDark">#153c5d</Color>
+    <SolidColorBrush x:Key="Panel1Brush" Color="{StaticResource BackLight}"/>
+    <SolidColorBrush x:Key="Panel2Brush" Color="{StaticResource BackDark}"/>
     <!--Белый фрейм-->
     <Color x:Key="WhiteFrame">#eeeeee</Color>
-    <Color x:Key="GrayFrame">#dddddd</Color>
+    <Color x:Key="GrayFrame">#b1b1b1</Color>
     <SolidColorBrush x:Key="WhiteFrameBrush" Color="{StaticResource WhiteFrame}"/>
     <SolidColorBrush x:Key="GrayFrameBrush" Color="{StaticResource GrayFrame}"/>
     <!--Голубой фрейм-->

@@ -36,7 +36,7 @@
 
             <Frame Style="{StaticResource MainFrame}">
                 <StackLayout>
-                    <Image Source="{Binding Image}" MaximumHeightRequest="400" MaximumWidthRequest="400"/>
+                    <Image Source="{Binding Image}" Margin="10" HorizontalOptions="Center"/>
                 </StackLayout>
             </Frame>
 
@@ -71,11 +71,11 @@
             <HorizontalStackLayout HorizontalOptions="Center">
                 <Button x:Name="Back" Text="Назад" Clicked="Back_Clicked"  Margin="10"
                 FontSize="16" HorizontalOptions="Start"
-                HeightRequest="50" WidthRequest="120"/>
+                HeightRequest="50" WidthRequest="120" BackgroundColor="#7e9bd1"/>
 
                 <Button x:Name="ShareBtn" Text="Поделиться" Clicked="ShareBtn_Clicked" 
                 Margin="10" FontSize="16"
-                HorizontalOptions="Start" HeightRequest="50" WidthRequest="180"/>
+                HorizontalOptions="Start" HeightRequest="50" WidthRequest="180" BackgroundColor="#7e9bd1"/>
             </HorizontalStackLayout>
 
         </StackLayout>
