@@ -21,7 +21,7 @@
                 "плановая вакцинация, чипирование и оформление ветеринарных паспортов; \r\n" +
                 "экспертные рекомендации по профилактике заболеваний",
                 Price= "1000 рублей",
-                Image = "mikhail_ivanov.jpg",
+                Image = "mikhailivanov.jpg",
                 WorkingHours = new List<string>
                 {
                     "8:00 - 16:00",
@@ -42,7 +42,7 @@
                 TypeSpecialist = "Хирург",
                 Service = "Операции по стерилизации и кастрации, удалению злокачественных и доброкачественных образований, кесарево сечение, резекция и другие.",
                 Price= "3000 рублей",
-                Image = "sergey_petrov.jpg",
+                Image = "sergeypetrov.jpg",
                 WorkingHours = new List<string>
                 {
                     "8:00 - 16:00",
@@ -58,12 +58,12 @@
             new  Specialist
             {
                 ID_Specialist = 3,
-                Name = "Сидоров Е.К.",
+                Name = "Евгений Сидоров",
                 Description = "Врач-диагност, УЗИ и рентген",
                 TypeSpecialist = "Диагност",
                 Service = "Осмотр животного; Лабораторные исследования; Рентгенография, УЗИ, МРТ; Экспресс-тесты",
                 Price= "1500 рублей",
-                Image = "",
+                Image = "evgeniysidorov.jpg",
                 WorkingHours = new List<string>
                 {
                     "8:00 - 16:00",
@@ -87,7 +87,7 @@
                 "после определения заболевания составляет грамотный план лечения;\r\n" +
                 "даёт рекомендации по профилактике, чтобы не допустить повторного появления проблемы.",
                 Price= "1200 рублей",
-                Image = "olga_vasilyeva.jpg",
+                Image = "olgavasilyeva.jpg",
                 WorkingHours = new List<string>
                 {
                     "8:00 - 16:00",
@@ -108,7 +108,7 @@
                 TypeSpecialist = "Стоматолог",
                 Service = "Чистка зубов\r\nДиагностика\r\nПрофилактические меры\r\nЛечение заболеваний\r\nХирургическое вмешательство",
                 Price= "800 рублей",
-                Image = "ekaterina_smirnova.jpg",
+                Image = "ekaterinasmirnova.jpg",
                 WorkingHours = new List<string>
                 {
                     "8:00 - 16:00",
@@ -129,7 +129,7 @@
                 TypeSpecialist = "Ортопед",
                 Service = "Рентген конечностей\r\nТравматология\r\nРеконструкция\r\nЛечение врождённых патологий\r\nЭндопротезирование\r\nРеабилитация и физиотерапия",
                 Price= "2000 рублей",
-                Image = "anna_petrova.jpg",
+                Image = "annapetrova.jpg",
                 WorkingHours = new List<string>
                 {
                     "8:00 - 16:00",
@@ -145,12 +145,12 @@
             new  Specialist
             {
                 ID_Specialist = 7,
-                Name = "Андреев П.Р.",
+                Name = "Павел Андреев",
                 Description = "Ветеринар-невролог занимается диагностикой, лечением и профилактикой различных заболеваний нервной системы у животных.",
                 TypeSpecialist = "Невролог",
                 Service = "Собирает анамнез\r\nПроводит неврологический осмотр\r\nРазрабатывает лечебную тактику",
                 Price= "2500 рублей",
-                Image = "",
+                Image = "pavelandreev.jpg",
                 WorkingHours = new List<string>
                 {
                     "8:00 - 16:00",
@@ -166,12 +166,12 @@
             new  Specialist
             {
                 ID_Specialist = 8,
-                Name = "Михайлова Л.Е.",
+                Name = "Элеонора Михайлова",
                 Description = "Ветеринар-офтальмолог занимается диагностикой, профилактикой и лечением заболеваний органов зрения у животных. ",
                 TypeSpecialist = "Офтальмолог",
                 Service = "Первичные и профилактические осмотры\r\nПроведение офтальмологического осмотра и исследований, таких как офтальмоскопия, тонометрия, рентгенография, УЗИ, компьютерная томография, различные анализы.",
                 Price= "1800 рублей",
-                Image = "",
+                Image = "eleonoramikhailova.jpg",
                 WorkingHours = new List<string>
                 {
                     "- - - - - - -",
@@ -192,7 +192,7 @@
                 TypeSpecialist = "Кардиолог",
                 Service = "Диагностика\r\nПодбор терапии\r\nКонтроль хронических заболеваний\r\nРеабилитация",
                 Price= "1400 рублей",
-                Image = "dmitry_kuznetsov.jpg",
+                Image = "dmitrykuznetsov.jpg",
                 WorkingHours = new List<string>
                 {
                     "8:00 - 16:00",
@@ -208,12 +208,12 @@
             new  Specialist
             {
                 ID_Specialist = 10,
-                Name = "Белова К.Ю.",
+                Name = "Ксения Белова",
                 Description = "Ветеринар-эндокринолог занимается диагностикой и лечением заболеваний эндокринной системы животных",
                 TypeSpecialist = "Эндокринолог",
                 Service = "Анализ крови на гормоны",
                 Price= "1600 рублей",
-                Image = "",
+                Image = "kseniabelova.jpg",
                 WorkingHours = new List<string>
                 {
                     "8:00 - 16:00",
@@ -225,6 +225,46 @@
                     "10:00 - 14:00"
                 }
             },
+            new  Specialist
+            {
+                ID_Specialist = 11,
+                Name = "Лев Пономарев",
+                Description = "",
+                TypeSpecialist = "Ассистент",
+                Service = "",
+                Price= "",
+                Image = "levponomarev.jpg",
+                WorkingHours = new List<string>
+                {
+                    "8:00 - 16:00",
+                    "8:00 - 16:00",
+                    "8:00 - 16:00",
+                    "8:00 - 16:00",
+                    "8:00 - 16:00",
+                    "- - - - - - -",
+                    "- - - - - - -"
+                }
+            },
+            new  Specialist
+            {
+                ID_Specialist = 12,
+                Name = "Анастасия Лебедева",
+                Description = "",
+                TypeSpecialist = "Анестезиолог",
+                Service = "",
+                Price= "",
+                Image = "anastasialebedeva.jpg",
+                WorkingHours = new List<string>
+                {
+                    "8:00 - 16:00",
+                    "8:00 - 16:00",
+                    "8:00 - 16:00",
+                    "8:00 - 16:00",
+                    "8:00 - 16:00",
+                    "- - - - - - -",
+                    "- - - - - - -"
+                }
+            }
         };
         public List<Specialist> GetAllSpecialists()
         {
