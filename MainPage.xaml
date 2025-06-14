@@ -36,7 +36,7 @@
                     <Image Aspect="Fill" Source="logo.png" WidthRequest="75" HeightRequest="75" Grid.RowSpan="4" Grid.Column="1"/>
 
                     <Label Grid.Row="2" Grid.Column="0"/>
-                    <Label Text="Версия 1.1.1 " FontAttributes="Bold" Grid.Row="3" Grid.Column="0"/>
+                    <Label Text="Версия 1.2.4 " FontAttributes="Bold" Grid.Row="3" Grid.Column="0"/>
                 </Grid>
             </Frame>
 

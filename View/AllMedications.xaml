@@ -3,38 +3,150 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VetClinicBKP.View.AllMedications">
 
-    <ScrollView>
-        <StackLayout Style="{StaticResource MainStack}">
+    <ScrollView x:Name="scrollView">
+        <StackLayout Orientation="Vertical" Style="{StaticResource MainStack}">
             <Frame Style="{StaticResource BlyFrame}">
-                <Label Text="Все препараты" HorizontalTextAlignment="Center" Style="{StaticResource BoldText}"/>
+                <Label Text="Препараты" HorizontalTextAlignment="Center" Style="{StaticResource BoldText}"/>
             </Frame>
 
-            <ListView ItemsSource="{Binding Medications}" x:Name="medicationList" ItemSelected="medicationList_ItemSelected" HasUnevenRows="True" >
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <ViewCell.View>
+            <Frame Style="{StaticResource MainFrame }">
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Picker Grid.Column="0" x:Name="subheaderPicker" Title="Выберите тип">
+                        <Picker.Items>
+                            <x:String>Таблетки</x:String>
+                            <x:String>Капли</x:String>
+                            <x:String>Растворы</x:String>
+                            <x:String>Другое</x:String>
+                        </Picker.Items>
+                    </Picker>
 
-                                <Frame Style="{StaticResource MainFrame}" CornerRadius="10" Padding="10" Margin="7,5,10,5">
-                                    <Grid Padding="10" ColumnSpacing="10">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition Width="*" />
-                                        </Grid.ColumnDefinitions>
+                    <Button x:Name="OnGoToSubheader" Text="Перейти" Clicked="OnGoToSubheader_Clicked" Margin="10" FontSize="16" 
+                    HeightRequest="50" WidthRequest="150" BackgroundColor="#7e9bd1"/>
+                </StackLayout>
+            </Frame>
 
-                                        <Image Grid.Column="0" Source="{Binding Image}" HeightRequest="75" WidthRequest="75" Aspect="AspectFill" />
+            <!--Список для вывода данных из кластера под таблетки-->
+            <StackLayout Style="{StaticResource MainStack}">
+                <Frame Style="{StaticResource MainFrame}" Margin="10,5,10,5" CornerRadius="10" Padding="10" x:Name="subheader1">
+                    <Label Text="Категория: таблетки" Style="{StaticResource BoldText}"/>
+                </Frame>
+                <ListView ItemsSource="{Binding Pills}" x:Name="pillsList" ItemSelected="pillsList_ItemSelected" HasUnevenRows="True" SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
 
-                                        <Label Grid.Column="1" Text="{Binding Name}" FontSize="16" VerticalOptions="Center" />
-                                    </Grid>
-                                </Frame>
+                                    <Frame Style="{StaticResource MainFrame}" CornerRadius="10" Padding="10" Margin="7,5,10,5">
+                                        <Grid Padding="10" ColumnSpacing="10">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
 
-                            </ViewCell.View>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                                            <Image Grid.Column="0" Source="{Binding Image}" HeightRequest="75" WidthRequest="75" Aspect="AspectFill" />
+
+                                            <Label Grid.Column="1" Text="{Binding Name}" FontSize="16" VerticalOptions="Center" />
+                                        </Grid>
+                                    </Frame>
+
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <!--Список для вывода данных из кластера под капли-->
+                <Frame Style="{StaticResource MainFrame}" Margin="10,5,10,5" CornerRadius="10" Padding="10" x:Name="subheader2">
+                    <Label Text="Категория: капли" Style="{StaticResource BoldText}"/>
+                </Frame>
+                <ListView ItemsSource="{Binding Drops}" x:Name="dropsList" ItemSelected="dropsList_ItemSelected" HasUnevenRows="True" SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+
+                                    <Frame Style="{StaticResource MainFrame}" CornerRadius="10" Padding="10" Margin="7,5,10,5">
+                                        <Grid Padding="10" ColumnSpacing="10">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Image Grid.Column="0" Source="{Binding Image}" HeightRequest="75" WidthRequest="75" Aspect="AspectFill" />
+
+                                            <Label Grid.Column="1" Text="{Binding Name}" FontSize="16" VerticalOptions="Center" />
+                                        </Grid>
+                                    </Frame>
+
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <!--Список для вывода данных из кластера под растворы-->
+                <Frame Style="{StaticResource MainFrame}" Margin="10,5,10,5" CornerRadius="10" Padding="10" x:Name="subheader3">
+                    <Label Text="Категория: растворы" Style="{StaticResource BoldText}"/>
+                </Frame>
+                <ListView ItemsSource="{Binding Solutions}" x:Name="solutionsList" ItemSelected="solutionsList_ItemSelected" HasUnevenRows="True" SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+
+                                    <Frame Style="{StaticResource MainFrame}" CornerRadius="10" Padding="10" Margin="7,5,10,5">
+                                        <Grid Padding="10" ColumnSpacing="10">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Image Grid.Column="0" Source="{Binding Image}" HeightRequest="75" WidthRequest="75" Aspect="AspectFill" />
+
+                                            <Label Grid.Column="1" Text="{Binding Name}" FontSize="16" VerticalOptions="Center" />
+                                        </Grid>
+                                    </Frame>
+
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <!--Список для вывода данных из кластера под другое-->
+                <Frame Style="{StaticResource MainFrame}" Margin="10,5,10,5" CornerRadius="10" Padding="10" x:Name="subheader4">
+                    <Label Text="Категория: другое" Style="{StaticResource BoldText}"/>
+                </Frame>
+                <ListView ItemsSource="{Binding Other}" x:Name="otherList" ItemSelected="otherList_ItemSelected" HasUnevenRows="True" SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+
+                                    <Frame Style="{StaticResource MainFrame}" CornerRadius="10" Padding="10" Margin="7,5,10,5">
+                                        <Grid Padding="10" ColumnSpacing="10">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Image Grid.Column="0" Source="{Binding Image}" HeightRequest="75" WidthRequest="75" Aspect="AspectFill" />
+
+                                            <Label Grid.Column="1" Text="{Binding Name}" FontSize="16" VerticalOptions="Center" />
+                                        </Grid>
+                                    </Frame>
+
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </StackLayout>
 
         </StackLayout>
     </ScrollView>
+
+
 
 </ContentPage>

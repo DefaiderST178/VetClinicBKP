@@ -15,7 +15,7 @@
                         <ViewCell>
                             <ViewCell.View>
 
-                                <Frame CornerRadius="10" Padding="10" HasShadow="True" Margin="7,5,10,5">
+                                <Frame Style="{StaticResource MainFrame}" CornerRadius="10" Padding="10" HasShadow="True" Margin="7,5,10,5">
 
                                     <Grid Padding="10" ColumnSpacing="10">
                                         <Grid.ColumnDefinitions>
