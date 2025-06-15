@@ -12,7 +12,28 @@ public partial class AllTovars : ContentPage
         BindingContext = tovarViewModel;
     }
 
-    private void tovarList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+    // кнопка для перехода к выбранной категории
+    private async void OnGoToSubheader_Clicked(object sender, EventArgs e)
+    {
+        if (subheaderPicker.SelectedIndex != -1)
+        {
+            switch (subheaderPicker.SelectedItem.ToString())
+            {
+                case "Корма":
+                    scrollView.ScrollToAsync(subheader1, ScrollToPosition.Start, true);
+                    break;
+                case "Для ухода":
+                    scrollView.ScrollToAsync(subheader2, ScrollToPosition.Start, true);
+                    break;
+                case "Игрушки":
+                    scrollView.ScrollToAsync(subheader3, ScrollToPosition.Start, true);
+                    break;
+            }
+        }
+    }
+
+    // выбор корма из списка 
+    private void feedsList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
     {
         if (e.SelectedItem == null)
             return;
@@ -21,6 +42,32 @@ public partial class AllTovars : ContentPage
 
         Navigation.PushAsync(new SelectedTovar(selectedTovar));
 
-        tovarList.SelectedItem = null;
+        feedsList.SelectedItem = null;
+    }
+
+    // выбор средства ухода из списка 
+    private void careList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+    {
+        if (e.SelectedItem == null)
+            return;
+
+        var selectedTovar = e.SelectedItem as Tovar;
+
+        Navigation.PushAsync(new SelectedTovar(selectedTovar));
+
+        careList.SelectedItem = null;
+    }
+
+    // выбор игрушки из списка 
+    private void toysList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+    {
+        if (e.SelectedItem == null)
+            return;
+
+        var selectedTovar = e.SelectedItem as Tovar;
+
+        Navigation.PushAsync(new SelectedTovar(selectedTovar));
+
+        toysList.SelectedItem = null;
     }
 }

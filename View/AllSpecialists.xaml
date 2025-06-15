@@ -9,7 +9,7 @@
                 <Label Text="Все специалисты" HorizontalTextAlignment="Center" Style="{StaticResource BoldText}"/>
             </Frame>
 
-            <ListView ItemsSource="{Binding Specialists}" x:Name="specialistsList" ItemSelected="specialistsList_ItemSelected" HasUnevenRows="True" >
+            <ListView ItemsSource="{Binding Specialists}" x:Name="specialistsList" ItemSelected="specialistsList_ItemSelected" HasUnevenRows="True" SeparatorVisibility="None">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
